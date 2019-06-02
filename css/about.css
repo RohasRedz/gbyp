@@ -1,0 +1,431 @@
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+
+body, html {
+ 
+	height:100%;
+	margin:0;
+}
+
+a { color: #333333; }
+
+
+
+
+p { text-align: center; }
+ .toggle, [id^=drop] {
+ display: none;
+}
+
+
+
+.nav_back{
+	margin:0px;
+	padding:0px;
+	background-color:#fbbc05;
+	
+	
+}
+
+nav {
+	text-align:left;
+	display:inline-table;
+  margin:0px;
+  padding:0px;
+  background-color: #fbbc05;
+}
+
+
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul {
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  background-color: #fbbc05;
+}
+
+nav a {
+  display: block;
+  padding: 0 20px;
+  color: #333333;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+nav ul li ul li:hover { background: #ffe086; }
+
+nav a:hover { background-color: #ffe086; }
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+
+nav ul li:hover > ul { display: inherit; }
+
+nav ul ul li {
+  width: 280px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 280px;
+}
+
+li > a:after { content: ' +'; }
+
+li > a:only-child:after { content: ''; }
+
+
+
+/*main-box-header*/
+
+.main-box-header{
+	margin:0px;
+	padding:100px;
+	background-position:center;
+	background-image:url(img/gbyp-background.jpg);
+	background-repeat:repeat;
+	background-attachment:fixed;
+	
+}
+
+.main-box-header p{
+	font-family:quicksand;
+	font-size:30px;
+	color:#fff;
+	padding:0px;
+	text-decoration:none;
+	text-transform:none;
+}
+
+
+.main-box-header a{
+    font-family:quicksand;
+	font-size:60px;
+	color:#fbbc05;
+	padding:0px;
+	text-decoration:none;
+	text-transform:uppercase;
+	
+}
+
+
+.about-gbyp{
+	display:inline-block;
+	max-width:1280px;
+	height:auto;
+	margin:0px;
+	padding:50px;
+}
+
+
+
+.about-gbyp-box img{
+	float:left;
+	width:20%;
+	height:auto;
+	padding:20px;
+}
+
+.about-gbyp-text{
+	float:left;
+	width:70%;
+	height:auto;
+}
+
+.about-gbyp-text p{
+	font-family:quicksand;
+	font-size:16px;
+	text-align:justify;
+	padding:0px;
+}
+
+
+/* footer start */
+
+.footer-main{
+	background-color:#333;
+	width:100%;
+	height:auto;
+	
+}
+
+.footer-box{
+	display:inline-block;
+	background-color:#333;
+	max-width:1280px;
+	height:auto;
+	margin:0;
+	padding:0;
+	
+}
+
+.footer-col{
+	float:left;
+	text-align:justify;
+	width:30%;
+	height:auto;
+	margin:5px;
+	padding:5px;
+	
+
+	
+}
+
+.footer-col span{
+	margin-left:0px;
+	
+}
+
+.footer-col button{
+	background-color:#fbbc05;
+	border:none;
+	margin-top:20px;
+	color:#333;
+	padding:10px;
+	
+}
+
+.footer-col button:hover{
+	background-color:#fff;
+	
+}
+
+.footer-box i{
+	font-size:16px;
+	color:#fbbc05;
+	padding:10px;
+}
+
+.footer-box p{
+	font-family:quicksand;
+	text-align:left;
+	font-size:24px;
+	color:#fbbc05;
+	padding:5px;
+	text-decoration:bold;
+}
+
+.footer-box a{
+	font-family:quicksand;
+	font-size:16px;
+	color:#fff;
+	padding:0px;
+	text-decoration:none;
+}
+
+.gbyp-social i{
+	
+	font-size:40px;
+	
+}
+
+
+.about-designer{
+	max-width:100%;
+	height:auto;
+	background-color:#000000;
+	padding:10px;
+	margin:0;
+	
+	
+}
+
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+
+nav {
+	text-align:center;
+  margin:0px; 
+}
+
+.toggle + a,
+ .menu { display: none; }
+
+.toggle {
+  display: block;
+  background-color: #fbbc05;
+  padding: 0 20px;
+  color: #333333;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+  border: none;
+}
+
+.toggle:hover { background-color: #ffe086; }
+
+[id^=drop]:checked + ul { display: block; }
+
+nav ul li {
+  display: block;
+  width: 100%;
+}
+
+nav ul ul .toggle,
+ nav ul ul a { padding: 0 40px; }
+
+nav ul ul ul a { padding: 0 80px; }
+
+nav a:hover,
+ nav ul ul ul a { background-color: #ffe086; }
+
+nav ul li ul li .toggle,
+ nav ul ul a { background-color: #ffd660; }
+
+nav ul ul {
+  float: none;
+  position: static;
+  color: #ffffff;
+}
+
+nav ul ul li:hover > ul,
+nav ul li:hover > ul { display: none; }
+
+nav ul ul li {
+  display: block;
+  width: 100%;
+}
+
+nav ul ul ul li { position: static;
+
+}
+
+
+/*main-box-header*/
+
+.main-box-header{
+	margin:0px;
+	padding:50px;
+	background-position:center;
+	background-image:url(img/gbyp-background.jpg);
+	background-repeat:repeat;
+	background-attachment:fixed;
+	
+}
+
+.main-box-header p{
+	font-family:quicksand;
+	font-size:24px;
+	color:#fff;
+	padding:0px;
+	text-decoration:none;
+	text-transform:none;
+}
+
+
+.main-box-header a{
+    font-family:quicksand;
+	font-size:36px;
+	color:#fbbc05;
+	padding:0px;
+	text-decoration:none;
+	text-transform:uppercase;
+	
+}
+
+
+.about-gbyp{
+	display:inline-block;
+	max-width:1280px;
+	height:auto;
+	margin:0px;
+	padding:10px;
+}
+
+
+
+.about-gbyp-box img{
+	float:left;
+	width:0%;
+	height:0;
+	padding:0px;
+}
+
+.about-gbyp-text{
+	float:left;
+	width:100%;
+	height:auto;
+}
+
+.about-gbyp-text p{
+	font-family:quicksand;
+	font-size:18px;
+	text-align:justify;
+	padding:0px;
+}
+
+/* footer start */
+
+
+.footer-col{
+	float:left;
+	text-align:justify;
+	width:90%;
+	height:auto;
+	margin:0px;
+	padding:20px;
+}
+
+
+
+/* footer closed */
+
+
+}
+
+@media all and (max-width : 360px) {
+
+nav ul li {
+  display: block;
+  width: 100%;
+}
+
+
+/* footer start */
+
+
+.footer-col{
+	float:left;
+	text-align:justify;
+	width:86%;
+	height:auto;
+	margin:0px;
+	padding:20px;
+}
+
+
+
+/* footer closed */
+
+}
